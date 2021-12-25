@@ -18,7 +18,7 @@
     <session id="-1435513082">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="214" />
+          <entry key="project.closed" value="219" />
           <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.1" value="32" />
           <entry key="project.open.time.10" value="1" />
@@ -31,7 +31,7 @@
           <entry key="project.open.time.17" value="6" />
           <entry key="project.open.time.18" value="4" />
           <entry key="project.open.time.19" value="6" />
-          <entry key="project.open.time.2" value="35" />
+          <entry key="project.open.time.2" value="36" />
           <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.21" value="3" />
           <entry key="project.open.time.22" value="2" />
@@ -42,7 +42,7 @@
           <entry key="project.open.time.27" value="3" />
           <entry key="project.open.time.28" value="3" />
           <entry key="project.open.time.29" value="6" />
-          <entry key="project.open.time.3" value="22" />
+          <entry key="project.open.time.3" value="24" />
           <entry key="project.open.time.30" value="7" />
           <entry key="project.open.time.31" value="3" />
           <entry key="project.open.time.32" value="2" />
@@ -50,8 +50,10 @@
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.37" value="2" />
+          <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.39" value="2" />
           <entry key="project.open.time.4" value="5" />
+          <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.5" value="6" />
@@ -63,32 +65,32 @@
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
           <entry key="project.open.time.99" value="1" />
-          <entry key="project.opened" value="215" />
+          <entry key="project.opened" value="220" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="471" />
+          <entry key="java" value="475" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="471" />
+          <entry key="JAVA" value="475" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="22847" />
+          <entry key="java" value="22940" />
           <entry key="txt" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="22847" />
+          <entry key="JAVA" value="22940" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
@@ -97,10 +99,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/trie_prefixtree/MapSum.java">
+        <entry file="file://$PROJECT_DIR$/src/tree/non_recursive/IsEvenOddTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="70" lean-forward="true" selection-start-line="32" selection-end-line="70" />
+            <state relative-caret-position="272">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,6 +128,7 @@
       <find>LowestCommonAncestor.</find>
       <find>LowestCommonAncestor</find>
       <find>nextGreaterElement</find>
+      <find>majorityElement</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Test3.java" />
         <option value="$PROJECT_DIR$/src/tree/KthLargest.java" />
         <option value="$PROJECT_DIR$/src/tree/LowestCommonAncestorTwo.java" />
         <option value="$PROJECT_DIR$/src/singleton/Singleton.java" />
@@ -187,6 +189,7 @@
         <option value="$PROJECT_DIR$/src/list/DetectCycle.java" />
         <option value="$PROJECT_DIR$/src/integer/NextGreaterElement.java" />
         <option value="$PROJECT_DIR$/src/trie_prefixtree/MapSum.java" />
+        <option value="$PROJECT_DIR$/src/tree/non_recursive/IsEvenOddTree.java" />
       </list>
     </option>
   </component>
@@ -263,7 +266,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,10 +278,24 @@
               <item name="data_structure" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="data_structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data_structure" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data_structure" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data_structure" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tree" type="462c0819:PsiDirectoryNode" />
+              <item name="non_recursive" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -287,7 +303,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="C:/software/SDK" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1636854621051" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1640424177636" />
     <property name="last_opened_file_path" value="C:/software/Git/bin/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -620,7 +636,12 @@
       <workItem from="1635568514095" duration="183000" />
       <workItem from="1635568702235" duration="4000" />
       <workItem from="1636854557628" duration="165000" />
-      <workItem from="1636854741660" duration="546000" />
+      <workItem from="1636854741660" duration="1146000" />
+      <workItem from="1636855969195" duration="755000" />
+      <workItem from="1636865801665" duration="701000" />
+      <workItem from="1637156524367" duration="110000" />
+      <workItem from="1638192628750" duration="299000" />
+      <workItem from="1640423913176" duration="262000" />
     </task>
     <task id="LOCAL-00001" summary="test2">
       <created>1599986450965</created>
@@ -647,7 +668,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246652000" />
+    <option name="totallyTimeSpent" value="249379000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -660,9 +681,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.496337" visible="true" weight="0.24252222" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496337" visible="true" weight="0.26273242" />
       <window_info id="Structure" order="1" sideWeight="0.50457036" side_tool="true" weight="0.25626516" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -765,13 +785,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="dfs" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/singleton/Singleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/string/IsLongPressedName.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
@@ -963,13 +976,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/integer/TwoSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/integer/FindContinuousSequence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -1048,13 +1054,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/array/MajorityElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/deque/MaxSlidingWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -1090,17 +1089,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/integer/SingleNumbers.java">
+    <entry file="file://$PROJECT_DIR$/src/trie_prefixtree/MapSum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="44" column="9" selection-start-line="41" selection-start-column="6" selection-end-line="44" selection-end-column="9" />
+        <state relative-caret-position="-217">
+          <caret line="48" column="48" lean-forward="true" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/trie_prefixtree/MapSum.java">
+    <entry file="file://$PROJECT_DIR$/src/integer/SingleNumbers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="70" lean-forward="true" selection-start-line="32" selection-end-line="70" />
+        <state relative-caret-position="373">
+          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/integer/TwoSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/array/MajorityElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tree/non_recursive/IsEvenOddTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
