@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ab874db-8a4a-455f-b145-c9910d16d868" name="Default Changelist" comment="dfs">
+    <list default="true" id="5ab874db-8a4a-455f-b145-c9910d16d868" name="Default Changelist" comment="2022-02-12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,6 +123,9 @@
       <select />
     </treeState>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="2" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-198" />
     <option name="y" value="270" />
@@ -200,10 +206,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../software/Git/bin/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -527,6 +534,26 @@
       <workItem from="1640423913176" duration="338000" />
       <workItem from="1640432753532" duration="248000" />
       <workItem from="1640433065251" duration="276000" />
+      <workItem from="1640433820628" duration="283000" />
+      <workItem from="1640483322589" duration="1499000" />
+      <workItem from="1640507156636" duration="482000" />
+      <workItem from="1640947716495" duration="120000" />
+      <workItem from="1640956120278" duration="5000" />
+      <workItem from="1641089380868" duration="614000" />
+      <workItem from="1641090006349" duration="13000" />
+      <workItem from="1641090215387" duration="641000" />
+      <workItem from="1641091957793" duration="128000" />
+      <workItem from="1644642524639" duration="353000" />
+      <workItem from="1644713754037" duration="255000" />
+      <workItem from="1644714030830" duration="4000" />
+      <workItem from="1646659691769" duration="9000" />
+      <workItem from="1647043785206" duration="1315000" />
+      <workItem from="1647045558718" duration="3000" />
+      <workItem from="1647045642271" duration="9000" />
+      <workItem from="1647045697678" duration="321000" />
+      <workItem from="1647658615289" duration="268000" />
+      <workItem from="1647745426526" duration="19000" />
+      <workItem from="1649120675949" duration="390000" />
     </task>
     <task id="LOCAL-00001" summary="test2">
       <created>1599986450965</created>
@@ -549,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600079565840</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2022-02-12">
+      <created>1644642841552</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1644642841552</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -650,7 +684,8 @@
     <MESSAGE value="test2" />
     <MESSAGE value="jhjkh" />
     <MESSAGE value="dfs" />
-    <option name="LAST_COMMIT_MESSAGE" value="dfs" />
+    <MESSAGE value="2022-02-12" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-02-12" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/string/IsLongPressedName.java">
