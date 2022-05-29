@@ -4,7 +4,7 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ab874db-8a4a-455f-b145-c9910d16d868" name="Default Changelist" comment="2022-02-12">
+    <list default="true" id="5ab874db-8a4a-455f-b145-c9910d16d868" name="Default Changelist" comment="2022-05-28-力扣-1021. 删除最外层的括号">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -210,7 +210,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -218,7 +218,7 @@
       <recent name="C:\Users\王世林\IdeaProjects\data_structure\src\list" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FractionToDecimal">
+  <component name="RunManager" selected="Application.ValidIPAddress">
     <configuration name="FractionToDecimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="integer.FractionToDecimal" />
       <module name="data_structure" />
@@ -232,12 +232,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="random.Solution" />
+    <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.TwoSum" />
       <module name="data_structure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="random.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -245,12 +245,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.TwoSum" />
+    <configuration name="ValidIPAddress" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="regular_expression.ValidIPAddress" />
       <module name="data_structure" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="regular_expression.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -285,19 +285,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Solution" />
       <item itemvalue="Application.TwoSum" />
       <item itemvalue="Application.longestCommonSubsequence" />
       <item itemvalue="Application.longestCommonSubstring" />
       <item itemvalue="Application.FractionToDecimal" />
+      <item itemvalue="Application.ValidIPAddress" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ValidIPAddress" />
         <item itemvalue="Application.FractionToDecimal" />
         <item itemvalue="Application.longestCommonSubstring" />
         <item itemvalue="Application.longestCommonSubsequence" />
         <item itemvalue="Application.TwoSum" />
-        <item itemvalue="Application.Solution" />
       </list>
     </recent_temporary>
   </component>
@@ -553,7 +553,9 @@
       <workItem from="1647045697678" duration="321000" />
       <workItem from="1647658615289" duration="268000" />
       <workItem from="1647745426526" duration="19000" />
-      <workItem from="1649120675949" duration="390000" />
+      <workItem from="1649120675949" duration="521000" />
+      <workItem from="1653700781227" duration="430000" />
+      <workItem from="1653789776051" duration="2052000" />
     </task>
     <task id="LOCAL-00001" summary="test2">
       <created>1599986450965</created>
@@ -583,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644642841552</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2022-05-28-力扣-1021. 删除最外层的括号">
+      <created>1653701201567</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653701201567</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -685,7 +694,8 @@
     <MESSAGE value="jhjkh" />
     <MESSAGE value="dfs" />
     <MESSAGE value="2022-02-12" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-02-12" />
+    <MESSAGE value="2022-05-28-力扣-1021. 删除最外层的括号" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-05-28-力扣-1021. 删除最外层的括号" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/string/IsLongPressedName.java">
