@@ -5,6 +5,10 @@ class ListNode {
   }
 public class Main {
     public static void main(String[] args) {
+        String a = "abc";
+        String b = new String("abc");
+        System.out.println(a == b);
+
         ListNode l1=new ListNode(4);
         ListNode l2=new ListNode(2);
         ListNode l3=new ListNode(1);

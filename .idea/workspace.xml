@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5ab874db-8a4a-455f-b145-c9910d16d868" name="Default Changelist" comment="2022-05-28-力扣-1021. 删除最外层的括号">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data_structure/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data_structure/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +212,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -218,7 +220,7 @@
       <recent name="C:\Users\王世林\IdeaProjects\data_structure\src\list" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ValidIPAddress">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="FractionToDecimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="integer.FractionToDecimal" />
       <module name="data_structure" />
@@ -232,15 +234,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.TwoSum" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="data_structure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -285,25 +281,25 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TwoSum" />
       <item itemvalue="Application.longestCommonSubsequence" />
       <item itemvalue="Application.longestCommonSubstring" />
       <item itemvalue="Application.FractionToDecimal" />
       <item itemvalue="Application.ValidIPAddress" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ValidIPAddress" />
         <item itemvalue="Application.FractionToDecimal" />
         <item itemvalue="Application.longestCommonSubstring" />
         <item itemvalue="Application.longestCommonSubsequence" />
-        <item itemvalue="Application.TwoSum" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\王世林\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -560,6 +556,10 @@
       <workItem from="1655378148828" duration="951000" />
       <workItem from="1655379139874" duration="70000" />
       <workItem from="1655512684708" duration="752000" />
+      <workItem from="1656677141724" duration="347000" />
+      <workItem from="1656775479805" duration="476000" />
+      <workItem from="1656814519143" duration="237000" />
+      <workItem from="1658565596202" duration="1335000" />
     </task>
     <task id="LOCAL-00001" summary="test2">
       <created>1599986450965</created>
@@ -700,6 +700,7 @@
     <MESSAGE value="2022-02-12" />
     <MESSAGE value="2022-05-28-力扣-1021. 删除最外层的括号" />
     <option name="LAST_COMMIT_MESSAGE" value="2022-05-28-力扣-1021. 删除最外层的括号" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/string/IsLongPressedName.java">
