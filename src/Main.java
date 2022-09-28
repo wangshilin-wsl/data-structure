@@ -1,3 +1,6 @@
+import java.util.ArrayDeque;
+import java.util.Queue;
+
 class ListNode {
       int val;
      ListNode next;
@@ -5,6 +8,14 @@ class ListNode {
   }
 public class Main {
     public static void main(String[] args) {
+//        System.arraycopy();
+//        Arrays.copyOf();
+//        Arrays.copyOfRange()
+        Queue<Integer> queue = new ArrayDeque<>();
+        queue.add(1);
+        queue.add(2);
+        queue.add(3);
+        System.out.println(queue.poll());
         String a = "abc";
         String b = new String("abc");
         System.out.println(a == b);

@@ -4,10 +4,13 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ab874db-8a4a-455f-b145-c9910d16d868" name="Default Changelist" comment="2022-05-28-力扣-1021. 删除最外层的括号">
+    <list default="true" id="5ab874db-8a4a-455f-b145-c9910d16d868" name="Default Changelist" comment="2022-07-23-力扣-剑指 Offer II 004. 只出现一次的数字">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data_structure/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data_structure/ListNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/data_structure/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data_structure/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/data_structure/integer/SingleNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/data_structure/integer/SingleNumber.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/integer/SingleNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/integer/SingleNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +215,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -220,9 +223,29 @@
       <recent name="C:\Users\王世林\IdeaProjects\data_structure\src\list" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="FractionToDecimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="integer.FractionToDecimal" />
+  <component name="RunManager" selected="Application.GetKthMagicNumber">
+    <configuration name="GetKthMagicNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="deque.GetKthMagicNumber" />
+      <module name="data_structure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deque.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="data_structure" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingleNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="integer.SingleNumber" />
       <module name="data_structure" />
       <extension name="coverage">
         <pattern>
@@ -234,8 +257,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="data_structure" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -254,46 +277,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="longestCommonSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dynamic_programming.longestCommonSubsequence" />
-      <module name="data_structure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dynamic_programming.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="longestCommonSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dynamic_programming.longestCommonSubstring" />
-      <module name="data_structure" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dynamic_programming.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.longestCommonSubsequence" />
-      <item itemvalue="Application.longestCommonSubstring" />
-      <item itemvalue="Application.FractionToDecimal" />
       <item itemvalue="Application.ValidIPAddress" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.SingleNumber" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.GetKthMagicNumber" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GetKthMagicNumber" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.SingleNumber" />
         <item itemvalue="Application.ValidIPAddress" />
-        <item itemvalue="Application.FractionToDecimal" />
-        <item itemvalue="Application.longestCommonSubstring" />
-        <item itemvalue="Application.longestCommonSubsequence" />
       </list>
     </recent_temporary>
   </component>
@@ -559,7 +556,11 @@
       <workItem from="1656677141724" duration="347000" />
       <workItem from="1656775479805" duration="476000" />
       <workItem from="1656814519143" duration="237000" />
-      <workItem from="1658565596202" duration="1335000" />
+      <workItem from="1658565596202" duration="1387000" />
+      <workItem from="1663848161845" duration="7208000" />
+      <workItem from="1664088823726" duration="5020000" />
+      <workItem from="1664188338131" duration="3711000" />
+      <workItem from="1664370662382" duration="1004000" />
     </task>
     <task id="LOCAL-00001" summary="test2">
       <created>1599986450965</created>
@@ -596,7 +597,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653701201567</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2022-07-23-力扣-剑指 Offer II 004. 只出现一次的数字">
+      <created>1658566983105</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658566983105</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -699,7 +707,8 @@
     <MESSAGE value="dfs" />
     <MESSAGE value="2022-02-12" />
     <MESSAGE value="2022-05-28-力扣-1021. 删除最外层的括号" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-05-28-力扣-1021. 删除最外层的括号" />
+    <MESSAGE value="2022-07-23-力扣-剑指 Offer II 004. 只出现一次的数字" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-07-23-力扣-剑指 Offer II 004. 只出现一次的数字" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
