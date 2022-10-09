@@ -1,6 +1,4 @@
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.Queue;
+import java.util.*;
 
 class ListNode {
       int val;
@@ -9,6 +7,7 @@ class ListNode {
   }
 public class Main {
     public static void main(String[] args) {
+        new Main().merge(new int[][]{{1,3},{2,6},{8,10},{15,18}});
 //        System.arraycopy();
 //        Arrays.copyOf();
 //        Arrays.copyOfRange()
@@ -33,6 +32,19 @@ public class Main {
         }
     }
 
+    public int[][] merge(int[][] intervals) {
+        List<int[]> list = new ArrayList<>();
+        Arrays.sort(intervals, (o1, o2) -> o1[0] - o2[0]);
+        for (int i = 0; i < intervals.length; i++) {
+            int left = intervals[i][0], right = intervals[i][1];
+            if(list.isEmpty() || list.get(list.size() - 1)[1] < left){
+                list.add(new int[]{left, right});
+            }else {
+                list.get(list.size() - 1)[1] = Math.max(right, list.get(list.size() - 1)[1]);
+            }
+        }
+        return list.toArray(new int[list.size()][2]);
+    }
     public int[] advantageCount(int[] nums1, int[] nums2) {
         int n = nums1.length;
         int[] res = new int[n];
