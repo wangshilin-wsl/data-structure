@@ -1,68 +1,67 @@
 import java.util.*;
 
-/**
- * @author WSL
- * @version 1.0.0
- * @ClassName Test.java
- * @Description TODO
- * @createTime 2022年09月26日 19:08:00
- */
+/*给你一个下标从 0开始的数组nums，它包含 n个 互不相同的正整数。
+        请你对这个数组执行 m个操作，在第 i个操作中，
+        你需要将数字operations[i][0] 替换成operations[i][1]。
+
+        题目保证在第 i个操作中：
+
+        operations[i][0]在nums中存在。
+        operations[i][1]在nums中不存在。
+        请你返回执行完所有操作后的数组。
+
+
+
+        示例 1：
+
+        输入：nums = [1,2,4,6], operations = [[1,3],[4,7],[6,1]]
+        输出：[3,2,7,1]
+        解释：我们对 nums 执行以下操作：
+        - 将数字 1 替换为 3 。nums 变为 [3,2,4,6] 。
+        - 将数字 4 替换为 7 。nums 变为 [3,2,7,6] 。
+        - 将数字 6 替换为 1 。nums 变为 [3,2,7,1] 。
+        返回最终数组 [3,2,7,1] 。
+        示例 2：
+
+        输入：nums = [1,2], operations = [[1,3],[2,1],[3,2]]
+        输出：[2,1]
+        解释：我们对 nums 执行以下操作：
+        - 将数字 1 替换为 3 。nums 变为 [3,2] 。
+        - 将数字 2 替换为 1 。nums 变为 [3,1] 。
+        - 将数字 3 替换为 2 。nums 变为 [2,1] 。
+        返回最终数组 [2,1] 。
+
+
+        提示：
+
+        n == nums.length
+        m == operations.length
+        1 <= n, m <= 105
+        nums中所有数字 互不相同。
+        operations[i].length == 2
+        1 <= nums[i], operations[i][0], operations[i][1] <= 106
+        在执行第i 个操作时，operations[i][0]在nums中存在。
+        在执行第i个操作时，operations[i][1]在nums中不存在。*/
 public class Test {
-
-    public static void main(String[] args) {
-        int[] nums = new int[]{3,6,5,1,8};
-        System.out.println(hh(nums));
-    }
-
-    public static int hh(int[] nums){
-        List<List<Integer>> list = new ArrayList<>();
-        list.add(new ArrayList<>());
-        list.add(new ArrayList<>());
-        Map<Integer, List<Integer>> map = new HashMap<>();
-        int sum = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if(nums[i] % 3 == 0){
-                sum += nums[i];
-            }else {
-                int temp = nums[i] % 3;
-                list.get(temp - 1).add(nums[i]);
+    public char find(String a){
+        Map<Character, List<Integer>> map = new HashMap();
+        for (int i = 0; i < a.length(); i++) {
+            char ch = a.charAt(i);
+            List<Integer> list = map.get(ch);
+            if(list == null){
+                list=new ArrayList<>();
+            }
+            list.add(i);
+            map.put(ch, list);
+        }
+        int min = Integer.MAX_VALUE;
+        char res = '-';
+        for (Map.Entry<Character, List<Integer>> entry : map.entrySet()) {
+            if(entry.getValue().size() == 1 && entry.getValue().get(0) < min){
+                min = entry.getValue().get(0);
+                res = entry.getKey();
             }
         }
-        Collections.sort(list.get(0));
-        Collections.sort(list.get(1));
-        int n1 = list.get(0).size();
-        int n2 = list.get(1).size();
-        int min = Math.min(list.get(0).size(), list.get(1).size());
-        for (int i = 0; i < min; i++) {
-            sum += list.get(0).get(n1 - i -1) + list.get(1).get(n2 - i -1);
-        }
-
-        if(n1 - min > 3){
-            int sum1 = 0;
-            int j =0;
-            for (int i = n1 - min; i >= 0; i--) {
-                j++;
-                sum1+=list.get(0).get(i);
-                if(j % 3 == 0){
-                    sum+=sum1;
-                    sum1 = 0;
-                }
-            }
-        }
-        if (n2 - min > 3){
-            int sum1 = 0;
-            int j =0;
-            for (int i = n2 - min; i >= 0; i--) {
-                j++;
-                sum1+=list.get(1).get(i);
-                if(j % 3 == 0){
-                    sum+=sum1;
-                    sum1 = 0;
-                }
-            }
-        }
-
-
-        return sum;
+        return res;
     }
 }
