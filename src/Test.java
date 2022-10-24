@@ -43,6 +43,25 @@ import java.util.*;
         在执行第i 个操作时，operations[i][0]在nums中存在。
         在执行第i个操作时，operations[i][1]在nums中不存在。*/
 public class Test {
+    public static void main(String[] args) {
+
+    }
+
+    public String mergeAlternately(String word1, String word2) {
+        StringBuilder sb = new StringBuilder();
+        int n1 = word1.length(), n2 = word2.length(), i1 = 0, i2 = 0;
+        while (i1 < n1 || i2 < n2){
+            if(i1 < n1){
+                sb.append(word1.charAt(i1++));
+            }
+
+            if(i2 < n2){
+                sb.append(word2.charAt(i2++));
+            }
+        }
+        return sb.toString();
+    }
+
     public char find(String a){
         Map<Character, List<Integer>> map = new HashMap();
         for (int i = 0; i < a.length(); i++) {
