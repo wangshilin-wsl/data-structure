@@ -31,6 +31,23 @@ public class Main {
             node=node.next;
         }
     }
+    public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
+        if (items == null || items.size() == 0 || "".equals(ruleKey) || "".equals(ruleValue)) {
+            return 0;
+        }
+        int res = 0;
+       Map<String, Integer> map = new HashMap<>();
+       map.put("type", 0);
+       map.put("color", 1);
+       map.put("name", 2);
+       int index = map.get(ruleKey);
+        for (List<String> item : items) {
+            if (ruleValue.equals(item.get(index))){
+                res++;
+            }
+        }
+        return res;
+    }
 
     public int[][] merge(int[][] intervals) {
         List<int[]> list = new ArrayList<>();
