@@ -1,5 +1,3 @@
-import java.util.*;
-
 /*给你一个下标从 0开始的数组nums，它包含 n个 互不相同的正整数。
         请你对这个数组执行 m个操作，在第 i个操作中，
         你需要将数字operations[i][0] 替换成operations[i][1]。
@@ -44,43 +42,9 @@ import java.util.*;
         在执行第i个操作时，operations[i][1]在nums中不存在。*/
 public class Test {
     public static void main(String[] args) {
-
     }
 
-    public String mergeAlternately(String word1, String word2) {
-        StringBuilder sb = new StringBuilder();
-        int n1 = word1.length(), n2 = word2.length(), i1 = 0, i2 = 0;
-        while (i1 < n1 || i2 < n2){
-            if(i1 < n1){
-                sb.append(word1.charAt(i1++));
-            }
 
-            if(i2 < n2){
-                sb.append(word2.charAt(i2++));
-            }
-        }
-        return sb.toString();
-    }
 
-    public char find(String a){
-        Map<Character, List<Integer>> map = new HashMap();
-        for (int i = 0; i < a.length(); i++) {
-            char ch = a.charAt(i);
-            List<Integer> list = map.get(ch);
-            if(list == null){
-                list=new ArrayList<>();
-            }
-            list.add(i);
-            map.put(ch, list);
-        }
-        int min = Integer.MAX_VALUE;
-        char res = '-';
-        for (Map.Entry<Character, List<Integer>> entry : map.entrySet()) {
-            if(entry.getValue().size() == 1 && entry.getValue().get(0) < min){
-                min = entry.getValue().get(0);
-                res = entry.getKey();
-            }
-        }
-        return res;
-    }
+
 }
