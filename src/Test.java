@@ -42,9 +42,41 @@
         在执行第i个操作时，operations[i][1]在nums中不存在。*/
 public class Test {
     public static void main(String[] args) {
+        System.out.println(new Test().champagneTower(25, 6, 1));
     }
 
+    public double champagneTower(int poured, int query_row, int query_glass) {
+        //第几层
+        int num = 1;
+        while (true) {
+            if (poured < num) {
+                break;
+            }
+            poured -= num;
+            num++;
+        }
+        if (query_row + 1 < num) {
+            return 1d;
+        } else if (query_row + 1 > num) {
+            return 0d;
+        } else {
+            if (num == 1) {
+                return (double) poured;
+            }
+            double lv = (poured * 1.0d) / (num - 1);
+            if (query_glass == 0 || query_glass == num - 1){
+                return lv / 2;
+            }
+            return lv;
+        }
+    }
 
-
-
+    public int largestAltitude(int[] gain) {
+        int max = 0, last = 0;
+        for (int i : gain) {
+            last = i + last;
+            max = Math.max(max, last);
+        }
+        return max;
+    }
 }
