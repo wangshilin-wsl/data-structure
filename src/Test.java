@@ -45,6 +45,7 @@ public class Test {
         System.out.println(new Test().champagneTower(25, 6, 1));
     }
 
+
     public double champagneTower(int poured, int query_row, int query_glass) {
         //第几层
         int num = 1;
