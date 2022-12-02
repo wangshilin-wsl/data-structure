@@ -42,7 +42,28 @@
         在执行第i个操作时，operations[i][1]在nums中不存在。*/
 public class Test {
     public static void main(String[] args) {
-        System.out.println(new Test().champagneTower(25, 6, 1));
+        System.out.println(new Test().minOperations("001011"));
+    }
+
+    public int[] minOperations(String boxes) {
+        int n = boxes.length(), l = 0, r = 0;
+        int[] left = new int[n], right = new int[n], res = new int[n];
+        for (int i = 0; i < n; i++) {
+            if (i -1 >= 0) {
+                left[i] = left[i - 1] + l;
+                right[n - i - 1] = right[n - i] + r;
+            }
+            if (boxes.charAt(i) == '1') {
+                l++;
+            }
+            if (boxes.charAt(n - i - 1) == '1') {
+                r++;
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            res[i] = left[i] + right[i];
+        }
+        return res;
     }
 
 
