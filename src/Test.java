@@ -41,8 +41,55 @@
         在执行第i 个操作时，operations[i][0]在nums中存在。
         在执行第i个操作时，operations[i][1]在nums中不存在。*/
 public class Test {
+    int min = Integer.MAX_VALUE, abs = Integer.MAX_VALUE;
+
     public static void main(String[] args) {
-        System.out.println(new Test().minOperations("001011"));
+        System.out.println(new Test().closestCost(new int[]{1, 7}, new int[]{3,4}, 10));
+    }
+
+    public int closestCost(int[] baseCosts, int[] toppingCosts, int target) {
+        for (int baseCost : baseCosts) {
+            dfs(toppingCosts, target, baseCost, 0);
+        }
+        return abs;
+    }
+    void dfs(int[] toppingCosts, int target, int sum, int index){
+        if (index >= toppingCosts.length) {
+            return;
+        }
+        int temp = toppingCosts[index];
+        for (int i = 0; i < 3; i++) {
+            int ab = Math.abs(target - sum - temp * i);
+            if (ab < min) {
+                min = ab;
+                abs = sum + temp * i;
+            } else if (ab == min) {
+                abs = Math.min(sum + temp * i, abs);
+            }
+            dfs(toppingCosts, target, sum + temp * i, index + 1);
+        }
+    }
+
+    public int secondHighest(String s) {
+        int n = s.length();
+        int[] num = new int[10];
+        for (int i = 0; i < n; i++) {
+            char ch = s.charAt(i);
+            if (Character.isDigit(ch)) {
+                num[ch - '0']++;
+            }
+        }
+        int second = -1;
+        for (int i = num.length - 1, index = 0; i >= 0; i--) {
+            if (num[i] != 0) {
+                index++;
+                if (index == 2) {
+                    second = i;
+                    break;
+                }
+            }
+        }
+        return second;
     }
 
     public int[] minOperations(String boxes) {
