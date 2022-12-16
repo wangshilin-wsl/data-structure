@@ -44,7 +44,20 @@ public class Test {
     int min = Integer.MAX_VALUE, abs = Integer.MAX_VALUE;
 
     public static void main(String[] args) {
-        System.out.println(new Test().closestCost(new int[]{1, 7}, new int[]{3,4}, 10));
+        System.out.println(new Test().minOperations(new int[]{8}));
+    }
+
+    public int minOperations(int[] nums) {
+        int res = 0, last = nums[0], n = nums.length;
+        for (int i = 1; i < n; i++) {
+            if (nums[i] > last) {
+                last = nums[i];
+                continue;
+            }
+            res += last + 1 - nums[i];
+            last = last + 1;
+        }
+        return res;
     }
 
     public int closestCost(int[] baseCosts, int[] toppingCosts, int target) {
