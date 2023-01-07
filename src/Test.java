@@ -1,3 +1,5 @@
+import java.util.*;
+
 /*给你一个下标从 0开始的数组nums，它包含 n个 互不相同的正整数。
         请你对这个数组执行 m个操作，在第 i个操作中，
         你需要将数字operations[i][0] 替换成operations[i][1]。
@@ -44,7 +46,101 @@ public class Test {
     int min = Integer.MAX_VALUE, abs = Integer.MAX_VALUE;
 
     public static void main(String[] args) {
-        System.out.println(new Test().minOperations(new int[]{8}));
+        System.out.println(new Test().minMovesToSeat(new int[]{2,2,6,6}, new int[]{1,3,2,6}));
+    }
+    public char repeatedCharacter(String s) {
+       Set<Character> set = new HashSet<>();
+        for (int i = 0; i < s.length(); i++) {
+            char temp = s.charAt(i);
+            if (!set.add(temp)) {
+                return temp;
+            }
+        }
+        return 'a';
+    }
+
+    public int minMovesToSeat(int[] seats, int[] students) {
+        int res = 0, n = seats.length;
+        Arrays.sort(seats);
+        Arrays.sort(students);
+        for (int i = 0; i < n; i++) {
+            res += Math.abs(seats[i] - students[i]);
+        }
+        return res;
+    }
+
+    public List<Integer> twoOutOfThree(int[] nums1, int[] nums2, int[] nums3) {
+        List<Integer> list = new ArrayList<>();
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i : nums1) {
+            map.put(i, 1);
+        }
+        for (int i : nums2) {
+            map.put(i, map.getOrDefault(i, 0) | 2);
+        }
+        for (int i : nums3) {
+            map.put(i, map.getOrDefault(i, 0) | 4);
+        }
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            int value = entry.getValue();
+            if ((value & (value - 1)) != 0) {
+                list.add(entry.getKey());
+            }
+        }
+        return list;
+    }
+
+    public int minimumMoves(String s) {
+        int n = s.length(), res = 0;
+        for (int i = 0; i < n; i++) {
+            if (s.charAt(i) == 'X') {
+                i += 2;
+                res++;
+            }
+        }
+        return res;
+    }
+
+    public String largestMerge(String word1, String word2) {
+        StringBuilder sb = new StringBuilder();
+        int i1 = 0,i2 = 0,n1 = word1.length(), n2 = word2.length();
+        while (i1 < n1 && i2 < n2) {
+            if (word1.charAt(i1) > word2.charAt(i2)) {
+                sb.append(word1.charAt(i1++));
+            } else if (word1.charAt(i1) < word2.charAt(i2)) {
+                sb.append(word2.charAt(i2++));
+            } else {
+                //0表示
+                int flag = 0, i, j;
+                for (i = i1, j = i2; i < n1 && j < n2; i++, j++) {
+                    if (word1.charAt(i) == word2.charAt(j)) {
+                        continue;
+                    }
+                    flag = word1.charAt(i) > word2.charAt(j) ? 1 : 2;
+                    break;
+                }
+                if (flag == 0) {
+                    flag = 1;
+                    for (i = i1 + 1; i < n1; i++) {
+                        if (word1.charAt(i) == word1.charAt(i - 1)) {
+                            continue;
+                        }
+                        flag = word1.charAt(i) > word1.charAt(i - 1) ? 1 : 2;
+                        break;
+                    }
+                    for (j = i2 + 1; j < n2; j++) {
+                        if (word2.charAt(j) == word2.charAt(j - 1)) {
+                            continue;
+                        }
+                        flag = word2.charAt(j) > word2.charAt(j - 1) ? 2 : 1;
+                        break;
+                    }
+                }
+                sb.append(flag == 1 ? word1.charAt(i1++) : word2.charAt(i2++));
+            }
+        }
+        sb.append(i1 < n1 ? word1.substring(i1, n1) : word2.substring(i2, n2));
+        return sb.toString();
     }
 
     public int minOperations(int[] nums) {
