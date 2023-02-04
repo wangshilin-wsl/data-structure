@@ -46,8 +46,122 @@ public class Test {
     int min = Integer.MAX_VALUE, abs = Integer.MAX_VALUE;
 
     public static void main(String[] args) {
-        System.out.println(new Test().minMovesToSeat(new int[]{2,2,6,6}, new int[]{1,3,2,6}));
+        System.out.println(new Test().greatestLetter("arRAzFif"));
     }
+
+    public String greatestLetter(String s) {
+        int[] low = new int[26], upper = new int[26];
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            if (Character.isUpperCase(ch)) {
+                upper[ch - 'A']++;
+            }
+            if (Character.isLowerCase(ch)) {
+                low[ch - 'a']++;
+            }
+        }
+        for (int i = 25; i >= 0; i--) {
+            if (low[i] >= 1 && upper[i] >= 1) {
+                return (char) ('A' + i) + "";
+            }
+        }
+        return "";
+    }
+
+    public String getSmallestString(int n, int k) {
+        char[] res = new char[n];
+        for (int i = 0; i < n; i++) {
+            res[i] = 'a';
+        }
+        int sub = k - n, index = n - 1;
+        while (sub > 0) {
+            if (++res[index] == 'z') {
+                index--;
+            }
+            sub--;
+        }
+
+        return new String(res);
+    }
+
+    public int[] findingUsersActiveMinutes(int[][] logs, int k) {
+        int[] res = new int[k];
+        Map<Integer, Set<Integer>> activeMinutes = new HashMap<>();
+        for (int[] log : logs) {
+            int id = log[0], time = log[1];
+            activeMinutes.putIfAbsent(id, new HashSet<Integer>());
+            activeMinutes.get(id).add(time);
+        }
+        for (Map.Entry<Integer, Set<Integer>> entry : activeMinutes.entrySet()) {
+            res[entry.getValue().size() - 1]++;
+        }
+        return res;
+    }
+
+
+    public boolean strongPasswordCheckerII(String password) {
+        int n = password.length();
+        if (n < 8 ) {
+            return false;
+        }
+        boolean num = false, low = false, upper = false, special = false;
+        Set<Character> specials = new HashSet<Character>() {{
+            add('!');
+            add('@');
+            add('#');
+            add('$');
+            add('%');
+            add('^');
+            add('&');
+            add('*');
+            add('(');
+            add(')');
+            add('-');
+            add('+');
+        }};
+        for (int i = 0; i < n; i++) {
+            char ch = password.charAt(i);
+            if (Character.isDigit(ch)) {
+                num = true;
+            }
+            if (Character.isUpperCase(ch)) {
+                upper = true;
+            }
+            if (Character.isLowerCase(ch)) {
+                low = true;
+            }
+            if (specials.contains(ch)) {
+                special = true;
+            }
+            if (i > 0 && ch == password.charAt(i - 1)) {
+                return false;
+            }
+        }
+        return special && num && upper && low;
+    }
+
+    public int minMaxGame(int[] nums) {
+        while (nums.length != 1) {
+            int[] temp = new int[nums.length / 2];
+            for (int i = 0; i < temp.length; i++) {
+                temp[i] = (i & 1) == 0 ? Math.min(nums[i * 2], nums[i * 2 + 1]) : Math.max(nums[i * 2], nums[i * 2 + 1]);
+            }
+            nums = temp;
+        }
+        return nums[0];
+    }
+
+    public int prefixCount(String[] words, String pref) {
+        int res = 0;
+        for (String word : words) {
+            if (word.startsWith(pref)) {
+                res++;
+            }
+        }
+        return res;
+    }
+
+
     public char repeatedCharacter(String s) {
        Set<Character> set = new HashSet<>();
         for (int i = 0; i < s.length(); i++) {
