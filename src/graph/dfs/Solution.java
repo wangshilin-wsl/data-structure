@@ -3,7 +3,7 @@ package graph.dfs;
 /**
  * @author WSL
  * @version 1.0.0
- * @ClassName Solution.java
+ * @ClassName DieSimulator.java
  * @Description TODO
  * @createTime 2022年02月12日 13:10:00
  */
