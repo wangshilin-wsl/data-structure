@@ -1,4 +1,4 @@
-package slide_window;
+package prefix_sum;
 
 import java.util.HashMap;
 import java.util.Map;
