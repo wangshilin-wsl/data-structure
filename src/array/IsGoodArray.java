@@ -28,7 +28,7 @@ package array;
 
         1 <= nums.length <= 10^5
         1 <= nums[i] <= 10^9*/
-class IsGoodArray {
+public class IsGoodArray {
      public boolean isGoodArray(int[] nums) {
         //裴蜀定理：裴蜀定理（或贝祖定理）得名于法国数学家艾蒂安·裴蜀，说明了对任何整数a、b和它们的最大公约数d，关于未知数x和y的线性不定方程（称为裴蜀等式）：若a,b是整数,且gcd(a,b)=d，那么对于任意的整数x,y,ax+by都一定是d的倍数，特别地，一定存在整数x,y，使ax+by=d成立。
         //它的一个重要推论是：a,b互质的充分必要条件是存在整数x,y使ax+by=1.

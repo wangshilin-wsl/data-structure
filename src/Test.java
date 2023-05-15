@@ -46,7 +46,27 @@ public class Test {
     int min = Integer.MAX_VALUE, abs = Integer.MAX_VALUE;
 
     public static void main(String[] args) {
-        System.out.println(new Test().greatestLetter("arRAzFif"));
+        System.out.println(new Test().numPairsDivisibleBy60(new int[]{15,63,451,213,37,209,343,319}));
+    }
+
+    public int numPairsDivisibleBy60(int[] time) {
+        int n = time.length;
+        long sum = 0L;
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            int mod = time[i] % 60;
+            map.put(mod, map.getOrDefault(mod, 0) + 1);
+        }
+        for (int ti : time) {
+            int mod = ti % 60;
+            int other = (60 - mod) % 60;
+            if (!map.containsKey(other)) {
+                continue;
+            }
+            int num = map.get(other);
+            sum += mod == other ? num - 1 : num;
+        }
+        return (int)(sum / 2);
     }
 
     public String greatestLetter(String s) {
