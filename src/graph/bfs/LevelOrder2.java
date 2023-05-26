@@ -21,12 +21,6 @@ import java.util.*;
         ]
 */
 
-class TreeNode {
-      int val;
-      TreeNode left;
-      TreeNode right;
-      TreeNode(int x) { val = x; }
-  }
 public class LevelOrder2 {
     public static void main(String[] args) {
 
@@ -47,5 +41,11 @@ public class LevelOrder2 {
             list.add(list1);
         }
         return list;
+    }
+    class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int x) { val = x; }
     }
 }
